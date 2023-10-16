@@ -3,6 +3,7 @@ from random import randint
 
 
 
+
 def toss(faces=6):
     return randint(1,faces)
 
