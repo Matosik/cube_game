@@ -1,0 +1,3515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1114</width>
+    <height>872</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>7</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Toss cube</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e7f5dc</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="poko">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154;
+color:white;
+border: 2px solid #c0dfc2; 
+border-radius: 10px;  </string>
+    </property>
+    <property name="text">
+     <string>Покорение</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="poko_tablo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>370</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="poko_down">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>390</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="poko_up">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>370</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="survival_up">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>430</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="survival_down">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>450</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="survival_tablo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>430</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2;
+border: 2px solid #4b6154</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="provorstvo_down">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>510</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="provorstvo_tablo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>490</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="provorstvo_up">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>490</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="samooblad_down">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>570</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="samooblad_tablo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>550</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="samooblad_up">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>550</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="threat_down">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>630</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="threat_tablo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>610</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="threat_up">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>610</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="atletic_down">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>690</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="atletic_tablo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>670</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="atletic_up">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>670</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="animal_down">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>750</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animal_tablo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>730</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="animal_up">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>730</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="survival_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>430</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Выживание</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="provorstvo_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>490</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Проворство</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="samooblad_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>550</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Самооблад</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="threat_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>610</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Угроза</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="atletic_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>670</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Атлетика</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="animal_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>730</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Животные</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pozn_up">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>370</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ezoterica_button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>670</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Эзотерика</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="history_button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>610</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>История</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="history_down">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>630</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logic_up">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>730</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logic_tablo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>730</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pozn_down">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>390</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="learn_up">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>430</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="proniziat_tablo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>490</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ezoterica_down">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>690</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proniziat_up">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>490</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="history_up">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>610</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ritor_down">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>570</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proniziat_down">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>510</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="learn_down">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>450</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logic_down">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>750</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pozn_tablo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>370</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logic_button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>730</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Логика</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ritor_up">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>550</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pozn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>370</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154;
+color:white;
+border: 2px solid #c0dfc2; 
+border-radius: 10px;  </string>
+    </property>
+    <property name="text">
+     <string>Познание</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ritor_button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>550</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Риторика</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ritor_tablo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>550</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="learn_button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>430</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Изучение</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="history_tablo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>610</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="learn_tablo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>430</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2;
+border: 2px solid #4b6154</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ezoterica_tablo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>670</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ezoterica_up">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>670</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="proniziat_button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>490</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Проницат</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_up">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>370</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="focus_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>670</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Внимател</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="empatia_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>610</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Эмпатия</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="empatia_down">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>630</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nature_up">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>730</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nature_tablo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>730</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_down">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>390</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="medic_up">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>430</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="relig_tablo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>490</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="focus_down">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>690</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="relig_up">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>490</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="empatia_up">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>610</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fraud_down">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>570</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="relig_down">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>510</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="medic_down">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>450</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nature_down">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>750</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="save_tablo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>370</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nature_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>730</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Природа</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fraud_up">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>550</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="save">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>370</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154;
+color:white;
+border: 2px solid #c0dfc2; 
+border-radius: 10px;  </string>
+    </property>
+    <property name="text">
+     <string>Сохранение</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fraud_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>550</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Обман</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fraud_tablo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>550</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="medic_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>430</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Медицина</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="empatia_tablo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>610</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="medic_tablo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>430</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2;
+border: 2px solid #4b6154</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="focus_tablo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>670</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="focus_up">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>670</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="relig_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>490</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Религия</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sozid_up">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>370</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="barter_button">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>670</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Бартер</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="performance_button">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>610</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Выступление</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="performance_down">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>630</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="craft_up">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>730</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="craft_tablo">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>730</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sozid_down">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>390</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fastfinger_up">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>430</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mecanica_tablo">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>490</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="barter_down">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>690</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mecanica_up">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>490</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="performance_up">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>610</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="culture_down">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>570</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mecanica_down">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>510</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fastfinger_down">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>450</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="craft_down">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>750</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba</string>
+    </property>
+    <property name="text">
+     <string>♥</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sozid_tablo">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>370</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="craft_button">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>730</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Ремесло</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="culture_up">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>550</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sozid">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>370</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154;
+color:white;
+border: 2px solid #c0dfc2; 
+border-radius: 10px;  </string>
+    </property>
+    <property name="text">
+     <string>Cозидание</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="culture_button">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>550</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Культура</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="culture_tablo">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>550</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fastfinger_button">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>430</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Ловк. рук</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="performance_tablo">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>610</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fastfinger_tablo">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>430</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2;
+border: 2px solid #4b6154</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="barter_tablo">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>670</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #c0dfc2
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="barter_up">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>670</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#94d6ba;
+text-align: center</string>
+    </property>
+    <property name="text">
+     <string>♠</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mecanica_button">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>490</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Механика</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="answer">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>40</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS PGothic</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4b6154;
+color:white;
+border: 2px solid #c0dfc2; 
+border-radius: 10px;  </string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="just_1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>240</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>🎲</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="just_2">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>230</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>🎲</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="just_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>240</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>🎲</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="just_4">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>230</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>🎲</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sbros">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #c0dfc2; 
+    border-radius: 10px;  
+	border: 2px solid #4b6154;
+}
+
+
+QPushButton:pressed {
+    background-color: #4b6154;
+	border: 2px solid #c0dfc2; 
+	color:white
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Сброс бросков</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
